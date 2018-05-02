@@ -1,0 +1,275 @@
+/*!
+ * Start Bootstrap - Modern Business (https://startbootstrap.com/template-overviews/modern-business)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ */
+@import url(//fonts.googleapis.com/earlyaccess/hanna.css);
+
+@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+
+@import url(//fonts.googleapis.com/earlyaccess/jejuhallasan.css);
+
+@import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+
+@import url(//fonts.googleapis.com/earlyaccess/kopubbatang.css);
+
+@import url(//fonts.googleapis.com/earlyaccess/nanumbrushscript.css);
+
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+
+@import url(//fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+::-webkit-input-placeholder { /* Chrome */
+  color: #ccc;
+ 
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #ccc;
+
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #ccc;
+  opacity: 1;
+ 
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: #ccc;
+  opacity: 1;
+
+}
+body {
+	padding-top: 54px;
+	font-family: 'Jeju Gothic';
+	background-color: #ddd;
+}
+@media ( min-width : 992px) {
+	body {
+		padding-top: 56px;
+		font-family: 'Jeju Gothic';
+	}
+}
+@
+keyframes btn { 0% {
+	transform: scale(0, 1);
+}
+100%
+{
+transform:scale
+(1,1);
+}
+}
+/* 체크 박스를 이미지로 사용 */
+input[type=checkbox] {
+	display: none;
+}
+input[type=checkbox]+label {
+	display: inline-block;
+	cursor: pointer;
+	line-height: 22px;
+	padding-left: 22px;
+	background: url('../img/unchecked.png') left/22px no-repeat;
+}
+input[type=checkbox]:checked+label {
+	background-image: url('../img/checked.png');
+}
+
+/* index.jsp */
+#indexH3 {
+	font-family: 'Nanum Pen Script';
+	font-size: 4.2em;
+}
+#message {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: rgba(256, 256, 256, 0.9);	
+}
+.my-4 {
+	font-family: Jeju Gothic;
+	font-stretch: wider;
+	color: #0177A8;		
+}
+/* index.jsp */
+
+/* about.jsp */
+.mt-4, .mb-3 {
+	font-family: 'Jeju Gothic';
+	font-style: oblique;
+}
+/* about.jsp */
+.carousel-item {
+	height: 65vh;
+	min-height: 300px;
+	background: no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.portfolio-item {
+	margin-bottom: 30px;
+}
+
+/* 헤더 제목 부분  */
+.navbar-brand {
+	font-family: 'Nanum Pen Script', serif;
+	font-weight: bold;
+	font-size: 2.2em;
+}
+.nav-link {
+	font-family: 'Jeju Hallasan', serif;
+	font-weight: normal;
+	font-size: 1.4em;
+}
+.dropdown-menu {
+	background-color: rgba(77, 77, 77, 0.7);
+}
+.dropdown-menu-login {
+    width : 300px;
+	padding: 5px; 
+	text-align: center;	
+}
+
+/* 클릭 시 나오는 드롭다운 메뉴 */
+.dropdown-item {
+	font-family: 'Jeju Hallasan', serif !important;
+	font-size: 1.2em;
+	color: #ddd;
+	font-weight: lighter;	
+}
+.dropdown-item:HOVER {
+	background-color: #49e;
+	color: #fff;
+	font-weight: normal;
+}
+.dropdown-member:hover, .dropdown-member:focus {
+	color: #16181b;
+	text-decoration: none;
+	background-color: #f8f9fa;
+}
+
+.dropdown-member.active, .dropdown-member:active {
+	color: #fff;
+	text-decoration: none;
+	background-color: aqua;
+}
+
+.dropdown-member.disabled, .dropdown-member:disabled {
+	color: #6c757d;
+	background-color: transparent;
+} */
+/* 클릭 시 나오는 드롭다운 메뉴 */
+
+/* 버튼이 나타나는 애니메이션 */
+@keyframes btn {
+	 0% {	transform:scale(0,1) ;}
+	 100% {transform:scale(1,1);  }
+}
+/* 버튼이 나타나는 애니메이션 */
+
+/*  로그인 버튼 */
+/* 
+#CustomButton{
+  animation: btn 800ms; 애니메이션 적용
+  background: #4d94ff;#1AAB8A;
+  font-family: 'Noto Sans KR', serif;
+  font-weight: bold;
+  color:#fff;
+  border:none;
+  position:relative;
+  display: inline;
+  width: 100%;
+  height:auto;
+  font-size:1.5em;
+  padding:0.3em 0.7em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  text-align: center;
+  margin-top: 5px;
+}
+#CustomButton:hover{
+  background:#fff;
+  color: #4d94ff;#1AAB8A;
+} 
+#CustomButton:before, #CustomButton:after {
+  content:"";
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #4d94ff;
+  transition:400ms ease all;
+}
+#CustomButton:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+#CustomButton:hover:before,#CustomButton:hover:after {
+  width:100%;
+  transition:800ms ease all;
+} */
+/*로그인 버튼 */
+
+
+/* 빨간색 버튼 */
+#RedButton{
+  animation: btn 800ms; /* 애니메이션 적용 */
+  background: red;
+  font-family: 'Jeju Hallasan';
+  color:#fff;
+  border:none;
+  position:relative;
+  display: inline;
+  width: 100%;
+  height:auto;
+  font-size:1.9em;
+  padding:0.3em 0.7em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  text-align: center;
+  margin-top: 5px;
+}
+#RedButton:hover{
+  background:#fff;
+  color: red;
+} 
+#RedButton:before, #RedButton:after {
+  content:"";
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: red;
+  transition:400ms ease all;
+}
+#RedButton:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+#RedButton:hover:before,#RedButton:hover:after {
+  width:100%;
+  transition:800ms ease all;
+}
+/* 빨간색 버튼 */
+
+/* 푸터 */
+.footer {
+	text-align: right;
+	color: white;
+	font-size: 0.8em;
+	line-height: 1.8;
+}
